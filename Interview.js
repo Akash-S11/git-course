@@ -6,4 +6,5 @@ function OuterFunction(){
 	return InnerFunction; 
 }
 var z = OuterFunction();
+console.log(z);
 z();
