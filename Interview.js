@@ -1,6 +1,6 @@
 function OuterFunction(){
 	var a = 1;
-    const InnerFunction = function () {
+    const InnerFunction = () => {
   	console.log(a);
   }
 	return InnerFunction; 
