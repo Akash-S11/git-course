@@ -8,6 +8,30 @@ console.log(flattened);
 
 
 //Array prototype - .flat()
+
 const flattened1 = nestedArr.flat(Infinity);
 
 console.log(flattened1);
+
+//---------------------------------------------
+
+// 2)Count Frequency of Elements (reduce)
+
+// Count the occurrences of each element in an array.
+
+const arr = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+const countFrequency = arr.reduce((acc, curr) => {
+         acc[curr] = (acc[curr] || 0) + 1;
+        return acc;
+    }, {});
+
+const output = (arr) => {
+    return arr.reduce((acc,curr) => {
+    acc[curr] = (acc[curr] || 0) + 1;
+    return acc;
+}, {});
+}
+
+console.log(output(arr));
+console.log(countFrequency);
